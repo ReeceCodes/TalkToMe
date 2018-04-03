@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html style="min-width:300px;">
+<head>
+<title>Talk 2 Me Options</title>
+</head>
+<body>
+
+<div style="width:90%;">
+
+<p>Voice:</p>
+<select id="voice">
+</select>
+
+<br/><p>
+Volume:</p>
+<input type="number" id="volume" value="" step="1" min="0" max="100" />
+
+<br/>
+<p>
+Rate (how quickly text is read):</p>
+<input type="number" id="rate" value="" step="0.1" min="0.1" max="10" />
+<br/>
+<p>
+Pitch:</p>
+<input type="number" id="pitch" value="" step="0.1" min="0" max="2" />
+<br/>
+<p>
+Language:</p>
+<select id="lang">
+<option value="default">Default (use default language for voice)</option>
+<option value="en-US">English (US)</option>
+<option value="es-ES">Spanish</option>
+<option value="fr-FR">French</option>
+<option value="it-IT">Italian</option>
+<option value="ja-JP">Japanese</option>
+<option value="de-DE">German</option>
+</select>
+<br/>
+<br/>
+<div id="status"></div>
+<button id="save">Save</button>
+</div>
+
+<script src="options.js"></script>
+
+</body>
+</html>
